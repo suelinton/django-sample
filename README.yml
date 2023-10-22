@@ -1,0 +1,33 @@
+1- instala python
+2- instala vscode
+3- cria um ambiente virtual
+    >Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+    > py -3 -m venv .venv
+    > .venv\Scripts\activate
+3- prepara o ambiente
+    >python -m pip install Django
+    >pip install djangorestframework
+    >pip install django-cors-headers
+    >pip install psycopg2
+    - baixa o postgressql
+4- roda o django
+    > django-admin startproject DjangoAPI
+    > cd DjangoApi
+    > python manege.py runserver
+5- Add EmployerEndpoint
+  >python manage.py startapp Employee
+6- Configura o ambiente em settings.py
+  - INSTALLED APPS
+    -Add 'rest_fremework', 'corsheaders' e 'Employee.apps.EmployeeConfig'
+  - ADD CORS_ORIGIN_ALLOW_ALL = True
+  - Configura o DATABASES
+7 - Add models em Employee\models.py
+  - add ao settings.py o nome 'Employee'
+8 - Gera o migrations para criar as tabelas no banco de dados
+  >python manage.py makemigrations Employee
+9 - Adiciona um novo arquivo serializer.py
+10- configura a views
+11- Adiciona um novo arquivo urls.py
+12- Adiciona o urls.py no urls.py na pasta raiz
+13- Testa
+  >python manage.py runserver

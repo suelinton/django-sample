@@ -1,0 +1,35 @@
+# Python bytecode
+*.pyc
+
+# Django ORM files
+*.sqlite3
+*.sqlite3-journal
+
+# Django static files
+*.css
+*.js
+*.html
+*.jpg
+*.png
+*.gif
+
+# Django media files
+media
+
+# Virtualenv
+venv
+
+# IDE settings
+.vscode
+
+# Django Rest Framework files
+
+# DRF cache
+*.cache
+
+# DRF generated code
+*.pyo
+*.pyd
+
+# DRF test files
+tests/
